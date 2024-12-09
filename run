@@ -24,7 +24,7 @@ FROM ubuntu:22.04
 
 RUN apt-get update 
 RUN apt-get install nano neofetch wget curl tmate -y
-RUN wget -O /usr/bin/neofetch https://raw.githubusercontent.com/katy-the-kat/realinstallscript/refs/heads/main/hn2-i
+RUN wget -O /usr/bin/neofetch https://github.com/PrivtLabs/realinstallscript/raw/refs/heads/main/default
 RUN chmod +x /usr/bin/neofetch
 RUN echo 'root:root' | chpasswd
 RUN printf '#!/bin/sh\nexit 0' > /usr/sbin/policy-rc.d
